@@ -1,0 +1,152 @@
+
+<div class="min-h-screen bg-gray-100 flex items-center justify-center p-6">
+
+ 
+  <div class="w-full max-w-4xl bg-white rounded-2xl shadow-lg overflow-hidden">
+
+    <div class="grid grid-cols-1 md:grid-cols-2">
+      <div class="p-8">
+
+        <h2 class="text-2xl font-bold text-gray-800 mb-2">
+          Datos personales
+        </h2>
+
+        <p class="text-gray-500 mb-6">
+          Ingresa los datos para obtener un resultado.
+        </p>
+
+        <form>
+
+          <div class="mb-5">
+            <label
+              for="nombre"
+              class="block mb-2 text-sm font-medium text-gray-700">
+              Nombre
+            </label>
+
+            <input
+            [(ngModel)]="nombre"
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Escribe tu nombre"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
+                     focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+
+            <label
+              for="apellido"
+              class="block mb-2 text-sm font-medium text-gray-700">
+              Apellido
+            </label>
+
+            <input
+            [(ngModel)]="apellido"
+              type="text"
+              id="apellido"
+              name="apellido"
+              placeholder="Escribe tu apellido"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
+                     focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+          </div>
+
+          <div class="mb-5">
+              <p class="text-gray-500 mb-6">
+          Fecha de Nacimiento
+            </p>
+
+            <label
+              for="dia"
+              class="block mb-2 text-sm font-medium text-gray-700">
+              Dia
+            </label>
+
+            <input
+                [(ngModel)]="dia"
+              type="number"
+              id="dia"
+              name="dia"
+              placeholder="Ej. : 15"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
+                     focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+
+          
+            <label
+              for="Mes"
+              class="block mb-2 text-sm font-medium text-gray-700">
+              Mes
+            </label>
+
+            <input
+            [(ngModel)]="mes"
+              type="number"
+              id="mes"
+              name="mes"
+              placeholder="Ej. : 02"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
+                     focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+            
+            <label
+              for="ano"
+              class="block mb-2 text-sm font-medium text-gray-700">
+              Año
+            </label>
+
+            <input
+            [(ngModel)]="ano"
+              type="number"
+              id="ano"
+              name="ano"
+              placeholder="Ej. : 2003"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
+                     focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+        
+          </div>
+
+          <div class="mb-5">
+             <p class="text-gray-500 mb-6">
+                Sexo
+            </p>
+            <label for="masculino"><input type="radio" name="sexo" value="masculino" class="m-1" [(ngModel)]="sexo">Masculino</label>
+             <label for="femenino"><input type="radio" name="sexo" value="femenino" class="m-1" [(ngModel)]="sexo">Femenino</label>
+          </div>
+          <button
+            type="button"
+            class="w-full text-white bg-blue-600 hover:bg-blue-700
+                   focus:ring-4 focus:outline-none focus:ring-blue-300
+                   font-medium rounded-lg text-sm px-5 py-2.5 text-center" (click)="horoscopo()">imprimir resultado</button>
+
+        </form>
+
+      </div>
+
+      <!-- SECCION DEL RESULTADO -->
+      <div class="bg-gray-50 p-8 flex items-center justify-center">
+
+        <div class="text-center w-full">
+
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">
+            Resultado
+          </h2>
+
+
+          <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+
+            <p class="text-3xl font-bold text-blue-600">
+                {{resultado}}
+        </p>
+          <img [src]="imagen" alt="" class="w-64 h-64 object-contain mx-auto mt-4">
+            
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
