@@ -9,6 +9,7 @@ import { Navbar } from './navbar/navbar/navbar'
 import { Distancia } from './formulario/distancia/distancia'
 import { Zodiaco } from './formulario/zodiaco/zodiaco';
 import { ListaEscuela } from './escuela/lista-escuela/lista-escuela'
+import {Cinepolis} from './escuela/cinepolis/cinepolis'
 
 
 
@@ -18,6 +19,7 @@ import { ListaEscuela } from './escuela/lista-escuela/lista-escuela'
     Navbar,
     Distancia,
     ListaEscuela,
+    Cinepolis,
     FormsModule,
     RouterOutlet,
     RouterLink
