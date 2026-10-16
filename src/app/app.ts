@@ -10,6 +10,7 @@ import { Distancia } from './formulario/distancia/distancia'
 import { Zodiaco } from './formulario/zodiaco/zodiaco';
 import { ListaEscuela } from './escuela/lista-escuela/lista-escuela'
 import {Cinepolis} from './escuela/cinepolis/cinepolis'
+import {Ventas} from './escuela/ventas/ventas'
 
 
 
@@ -20,6 +21,7 @@ import {Cinepolis} from './escuela/cinepolis/cinepolis'
     Distancia,
     ListaEscuela,
     Cinepolis,
+    Ventas,
     FormsModule,
     RouterOutlet,
     RouterLink
